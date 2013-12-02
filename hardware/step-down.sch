@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:tinkerforge
+LIBS:step-down-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
@@ -423,7 +424,7 @@ F 3 "" H 1900 3550 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 1350 2750 0    60   ~ 0
-max 25V\n5A
+max 27V\n5A
 $Comp
 L R R4
 U 1 1 4D0239B1
