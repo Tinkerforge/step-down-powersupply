@@ -75,11 +75,11 @@
     (grid_origin 130.625 123.6)
     (visible_elements FFFFFFFF)
     (pcbplotparams
-      (layerselection 0x01038_80000001)
+      (layerselection 0x010f8_80000001)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
-      (plotframeref true)
+      (plotframeref false)
       (viasonmask false)
       (mode 1)
       (useauxorigin false)
