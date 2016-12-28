@@ -22,7 +22,7 @@
   )
 
   (layers
-    (0 Vorderseite signal hide)
+    (0 Vorderseite signal)
     (31 Rückseite signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -40,7 +40,7 @@
   )
 
   (setup
-    (last_trace_width 1.50114)
+    (last_trace_width 0.2)
     (user_trace_width 0.2)
     (user_trace_width 0.29972)
     (user_trace_width 0.50038)
@@ -75,7 +75,7 @@
     (grid_origin 130.625 123.6)
     (visible_elements FFFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x01038_80000001)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -98,7 +98,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory prod/))
+      (outputdirectory /tmp/step/))
   )
 
   (net 0 "")
