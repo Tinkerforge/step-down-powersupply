@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.6-e0-6349~53~ubuntu16.04.1)
 
   (general
     (links 91)
     (no_connects 0)
-    (area 130.572509 83.552029 170.671491 123.653551)
+    (area 129.716399 82.695919 283.62021 166.591933)
     (thickness 1.6002)
     (drawings 102)
     (tracks 832)
@@ -99,7 +99,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ../../../production/powersupply/stepdown_V13/gerber/))
+      (outputdirectory ../../../production/powersupply/stepdown_V13/best/))
   )
 
   (net 0 "")
@@ -154,6 +154,7 @@
   (module "" (layer Vorderseite) (tedit 4F1972CE) (tstamp 4D9DAEB9)
     (at 158.825 108.8)
     (path Logo_31x31)
+    (attr smd)
     (fp_text reference Ref** (at 0.70104 0.54864) (layer F.SilkS) hide
       (effects (font (size 0.127 0.127) (thickness 0.03302)))
     )
@@ -5695,6 +5696,7 @@
   (module kicad-libraries:SO-8 (layer Vorderseite) (tedit 5931522E) (tstamp 592340C1)
     (at 159.1691 90.65006)
     (path /4CCC016E)
+    (attr smd)
     (fp_text reference U2 (at 0 0) (layer F.Fab)
       (effects (font (size 0.3 0.3) (thickness 0.075)))
     )
@@ -6040,6 +6042,7 @@
   (module kicad-libraries:SRP7030 (layer Vorderseite) (tedit 5922FF03) (tstamp 5923403F)
     (at 152.72258 90.6018 90)
     (path /4CB2E88E)
+    (attr smd)
     (fp_text reference L1 (at 0 1.2 90) (layer F.Fab)
       (effects (font (size 0.3 0.3) (thickness 0.075)))
     )
@@ -6420,13 +6423,14 @@
     )
   )
 
-  (module kicad-libraries:ELKO_83 (layer Vorderseite) (tedit 590C6F6E) (tstamp 59233F69)
+  (module kicad-libraries:ELKO_83 (layer Vorderseite) (tedit 593A5956) (tstamp 59233F69)
     (at 142.92326 90.6018 90)
     (path /4CB2E8D7)
-    (fp_text reference C7 (at -0.04 1.07 90) (layer F.Fab)
+    (attr smd)
+    (fp_text reference C7 (at 0.0018 0.00174 180) (layer F.Fab)
       (effects (font (size 0.59944 0.59944) (thickness 0.12446)))
     )
-    (fp_text value 470µF/16V (at 0 0 90) (layer F.Fab)
+    (fp_text value 470µF/16V (at 1.8518 0.00174 180) (layer F.Fab)
       (effects (font (size 0.59944 0.59944) (thickness 0.12446)))
     )
     (fp_line (start -3.74904 -1.15062) (end -3.74904 1.09982) (layer F.Fab) (width 0.39878))
@@ -6580,13 +6584,14 @@
     )
   )
 
-  (module kicad-libraries:ELKO_83 (layer Vorderseite) (tedit 590C6F6E) (tstamp 59233F28)
+  (module kicad-libraries:ELKO_83 (layer Vorderseite) (tedit 593A595C) (tstamp 59233F28)
     (at 152.425 100.8 180)
     (path /4CC9FEDA)
-    (fp_text reference C1 (at -0.04 1.07 180) (layer F.Fab)
+    (attr smd)
+    (fp_text reference C1 (at 1.2 -0.2 270) (layer F.Fab)
       (effects (font (size 0.59944 0.59944) (thickness 0.12446)))
     )
-    (fp_text value 220µF/35V (at 0 0 180) (layer F.Fab)
+    (fp_text value 220µF/35V (at -0.4 -0.3 270) (layer F.Fab)
       (effects (font (size 0.59944 0.59944) (thickness 0.12446)))
     )
     (fp_line (start -3.74904 -1.15062) (end -3.74904 1.09982) (layer F.Fab) (width 0.39878))
@@ -6647,6 +6652,7 @@
 
   (module kicad-libraries:WEEE_7mm (layer Rückseite) (tedit 5922FFAE) (tstamp 50F47EE7)
     (at 147.9 103.6 180)
+    (attr smd)
     (fp_text reference VAL (at 0 0 180) (layer B.SilkS) hide
       (effects (font (size 0.2 0.2) (thickness 0.05)) (justify mirror))
     )
@@ -6772,6 +6778,7 @@
 
   (module kicad-libraries:CE_5mm (layer Rückseite) (tedit 5922FFD4) (tstamp 50F4F840)
     (at 153.375 103.6 180)
+    (attr smd)
     (fp_text reference VAL (at 0 0 180) (layer B.SilkS) hide
       (effects (font (size 0.2 0.2) (thickness 0.05)) (justify mirror))
     )
