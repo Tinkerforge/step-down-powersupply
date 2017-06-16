@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:tinkerforge
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -29,9 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:tinkerforge
-LIBS:step-down-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -103,7 +101,7 @@ U 1 1 4D919B11
 P 6700 3900
 F 0 "FB1" H 6700 4050 60  0000 C CNN
 F 1 "FB" H 6700 3800 60  0000 C CNN
-F 2 "0603" H 6700 3900 60  0001 C CNN
+F 2 "C0603" H 6700 3900 60  0001 C CNN
 F 3 "" H 6700 3900 60  0001 C CNN
 	1    6700 3900
 	0    1    1    0   
