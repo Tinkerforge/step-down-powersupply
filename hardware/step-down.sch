@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:tinkerforge
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -29,9 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:tinkerforge
-LIBS:step-down-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -407,13 +405,13 @@ U 1 1 4D1A2712
 P 2300 3300
 F 0 "R1" V 2400 3300 50  0000 C CNN
 F 1 "100k" V 2300 3300 50  0000 C CNN
-F 2 "0402" H 2300 3300 60  0001 C CNN
+F 2 "R0402" H 2300 3300 60  0001 C CNN
 F 3 "" H 2300 3300 60  0001 C CNN
 	1    2300 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOSFET_N Q1
+L MOSFET_N_CH Q1
 U 1 1 4D1A26BF
 P 1900 3550
 F 0 "Q1" H 1910 3720 60  0000 R CNN
