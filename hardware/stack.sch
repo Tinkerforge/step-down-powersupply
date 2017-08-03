@@ -29,17 +29,18 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:step-down-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date "2 dec 2013"
-Rev "1.2"
+Title "Step Down Powersupply"
+Date "2016-12-28"
+Rev "1.3"
 Comp "Tinkerforge GmbH"
 Comment1 "Licensed under CERN OHL v.1.1"
-Comment2 "Copyright (©) 2011, B.Nordmeyer <bastian@tinkerforge.com>"
+Comment2 "Copyright (©) 2016, B.Nordmeyer <bastian@tinkerforge.com>"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -96,15 +97,15 @@ Wire Wire Line
 	6700 4250 7200 4250
 Connection ~ 7100 4250
 $Comp
-L FILTER FB1
+L INDUCT FB1
 U 1 1 4D919B11
 P 6700 3900
-F 0 "FB1" H 6700 4050 60  0000 C CNN
-F 1 "FB" H 6700 3800 60  0000 C CNN
-F 2 "C0603" H 6700 3900 60  0001 C CNN
+F 0 "FB1" H 6850 3950 60  0000 C CNN
+F 1 "FB" H 6850 3800 60  0000 C CNN
+F 2 "R1206" H 6700 3900 60  0001 C CNN
 F 3 "" H 6700 3900 60  0001 C CNN
 	1    6700 3900
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 NoConn ~ 9600 4400
 NoConn ~ 4700 4500
@@ -160,10 +161,10 @@ F 3 "" H 3500 4900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VPP #PWR22
+L VPP #PWR019
 U 1 1 4CB30F5E
 P 9800 3550
-F 0 "#PWR22" H 9800 3750 40  0001 C CNN
+F 0 "#PWR019" H 9800 3750 40  0001 C CNN
 F 1 "VPP" H 9800 3700 40  0000 C CNN
 F 2 "" H 9800 3550 60  0001 C CNN
 F 3 "" H 9800 3550 60  0001 C CNN
@@ -171,10 +172,10 @@ F 3 "" H 9800 3550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR020
 U 1 1 4CB30E81
 P 7100 4350
-F 0 "#PWR019" H 7100 4350 30  0001 C CNN
+F 0 "#PWR020" H 7100 4350 30  0001 C CNN
 F 1 "GND" H 7100 4280 30  0001 C CNN
 F 2 "" H 7100 4350 60  0001 C CNN
 F 3 "" H 7100 4350 60  0001 C CNN
@@ -182,10 +183,10 @@ F 3 "" H 7100 4350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AGND #PWR020
+L AGND #PWR021
 U 1 1 4CB30E52
 P 7050 3700
-F 0 "#PWR020" H 7050 3700 40  0001 C CNN
+F 0 "#PWR021" H 7050 3700 40  0001 C CNN
 F 1 "AGND" H 7050 3630 50  0000 C CNN
 F 2 "" H 7050 3700 60  0001 C CNN
 F 3 "" H 7050 3700 60  0001 C CNN
@@ -193,10 +194,10 @@ F 3 "" H 7050 3700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR021
+L +5V #PWR022
 U 1 1 4CB30D27
 P 9800 4200
-F 0 "#PWR021" H 9800 4290 20  0001 C CNN
+F 0 "#PWR022" H 9800 4290 20  0001 C CNN
 F 1 "+5V" H 9800 4290 30  0000 C CNN
 F 2 "" H 9800 4200 60  0001 C CNN
 F 3 "" H 9800 4200 60  0001 C CNN
@@ -229,4 +230,8 @@ F 3 "" H 3500 3800 60  0001 C CNN
 	1    3500 3800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6700 4250 6700 4150
+Wire Wire Line
+	6700 3650 6700 3550
 $EndSCHEMATC
